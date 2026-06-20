@@ -28,7 +28,7 @@ const ROLE_BADGE = {
   admin: "badge-brand",
 };
 
-export default function Shell({ requireRole, title, subtitle, actions, children }) {
+export default function Shell({ requireRole, title, subtitle, actions, children }: any) {
   const { user, role, loading, logout } = useAuth({ requireRole });
   const router = useRouter();
   const [open, setOpen] = useState(false); // mobile drawer

@@ -16,7 +16,7 @@ export default function DoubtPage() {
 
   // ── Hindi voice input via the browser Web Speech API (free, Chrome) ──────────
   function startVoice() {
-    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
     if (!SR) {
       alert("Voice input needs Chrome.");
       return;
