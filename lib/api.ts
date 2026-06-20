@@ -13,8 +13,10 @@ async function authHeaders() {
   };
 }
 
+type ApiOptions = { method?: string; body?: any };
+
 /** Standard JSON request to the FastAPI backend. */
-export async function api(path, { method = "GET", body } = {}) {
+export async function api(path: string, { method = "GET", body }: ApiOptions = {}) {
   const res = await fetch(`${API_URL}${path}`, {
     method,
     headers: await authHeaders(),
@@ -33,7 +35,7 @@ export async function api(path, { method = "GET", body } = {}) {
  *
  * onToken(textChunk), onStatus(nodeName), onDone(), onError(message)
  */
-export async function streamDoubt(payload, { onToken, onStatus, onDone, onError }) {
+export async function streamDoubt(payload: any, { onToken, onStatus, onDone, onError }: any = {}) {
   try {
     const res = await fetch(`${API_URL}/doubt/stream`, {
       method: "POST",

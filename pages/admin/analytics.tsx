@@ -211,7 +211,7 @@ export default function AdminAnalytics() {
   );
 }
 
-function Stat({ label, value, accent = "", icon }) {
+function Stat({ label, value, accent = "", icon }: any) {
   return (
     <div className="card card-hover p-5">
       <div className="flex items-start justify-between gap-3">
@@ -262,11 +262,11 @@ function AccountList({ title, rows, iconName }) {
 function fmtDate(v) {
   if (!v) return "—";
   const d = new Date(v);
-  return isNaN(d) ? "—" : d.toLocaleDateString();
+  return isNaN(d.getTime()) ? "—" : d.toLocaleDateString();
 }
 
 function fmtDateTime(v) {
   if (!v) return "—";
   const d = new Date(v);
-  return isNaN(d) ? "—" : d.toLocaleString();
+  return isNaN(d.getTime()) ? "—" : d.toLocaleString();
 }

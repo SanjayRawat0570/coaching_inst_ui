@@ -16,7 +16,7 @@ export default function ReviewPage() {
   const [dueDates, setDueDates] = useState({}); // F7: test.id -> due date
 
   // ── Generate-test form ──────────────────────────────────────────────────────
-  const [gen, setGen] = useState({ student_email: "", subject: "", num_questions: 10, question_type: "mcq" });
+  const [gen, setGen] = useState<any>({ student_email: "", subject: "", num_questions: 10, question_type: "mcq" });
   const [generating, setGenerating] = useState(false);
   const [genMsg, setGenMsg] = useState("");
   const [classBusy, setClassBusy] = useState(false);

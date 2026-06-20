@@ -248,7 +248,6 @@ function WorkflowDiagram() {
           {Object.entries(NODES).map(([id, n]) => (
             <foreignObject key={id} x={n.x} y={n.y} width={NODE_W} height={NODE_H}>
               <div
-                xmlns="http://www.w3.org/1999/xhtml"
                 className="h-full w-full rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-ink-800/85 shadow-soft flex items-center gap-2.5 px-2.5 overflow-hidden"
                 style={{ borderLeft: `3px solid ${n.accent}` }}
               >

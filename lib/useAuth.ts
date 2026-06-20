@@ -6,7 +6,7 @@ import { supabase } from "./supabase";
  * Auth hook + optional route guard.
  * useAuth({ requireRole: "student" }) redirects to "/" if not logged in / wrong role.
  */
-export function useAuth({ requireRole } = {}) {
+export function useAuth({ requireRole }: { requireRole?: string } = {}) {
   const router = useRouter();
   const [user, setUser] = useState(null);
   const [role, setRole] = useState(null);
