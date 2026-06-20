@@ -100,8 +100,6 @@ export default function Shell({ requireRole, title, subtitle, actions, children 
         <nav className="flex-1 overflow-y-auto p-3 space-y-1">
           <p className="px-3 pt-2 pb-1.5 text-[11px] font-semibold uppercase tracking-widest muted">Menu</p>
           {links.map((l) => <NavLink key={l.href} {...l} />)}
-          <p className="px-3 pt-5 pb-1.5 text-[11px] font-semibold uppercase tracking-widest muted">System</p>
-          <NavLink href="/architecture" label="Architecture" icon="architecture" />
         </nav>
 
         <div className="p-3 border-t border-slate-200/80 dark:border-white/[0.07]">

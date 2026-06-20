@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import {
   LineChart,
   Line,
@@ -206,19 +205,6 @@ export default function AdminAnalytics() {
             )}
           </div>
 
-          {/* Platform architecture (also available as a full page at /architecture) */}
-          <Link href="/architecture" className="card card-hover p-5 flex items-center justify-between gap-4 bg-brand/[0.04] dark:bg-brand/[0.07] border-brand/20">
-            <div className="flex items-center gap-3 min-w-0">
-              <span className="icon-tile h-11 w-11 shrink-0"><Icon name="architecture" size={20} /></span>
-              <div className="min-w-0">
-                <h2 className="font-semibold">Platform architecture</h2>
-                <p className="muted text-sm mt-0.5">
-                  8 AI agents · 6-pattern RAG · LangGraph orchestration · 100% free stack
-                </p>
-              </div>
-            </div>
-            <span className="btn-ghost text-sm whitespace-nowrap shrink-0">View map <Icon name="arrowRight" size={15} /></span>
-          </Link>
         </div>
       )}
     </Shell>

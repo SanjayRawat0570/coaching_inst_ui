@@ -12,7 +12,6 @@ const NAV = [
   { href: "#who", label: "Who it's for" },
   { href: "#how", label: "How it works" },
   { href: "#faq", label: "FAQ" },
-  { href: "/architecture", label: "Architecture" },
 ];
 
 const STATS = [
@@ -82,7 +81,7 @@ const FAQS = [
 
 const FOOTER_COLS = [
   { title: "Product", links: [{ label: "Features", href: "#features" }, { label: "Who it's for", href: "#who" }, { label: "How it works", href: "#how" }, { label: "FAQ", href: "#faq" }] },
-  { title: "Platform", links: [{ label: "Architecture", href: "/architecture" }, { label: "Log in", href: "/login" }, { label: "Get started", href: "/login?mode=signup" }] },
+  { title: "Platform", links: [{ label: "Log in", href: "/login" }, { label: "Get started", href: "/login?mode=signup" }] },
   { title: "Roles", links: [{ label: "Students", href: "#who" }, { label: "Teachers", href: "#who" }, { label: "Parents", href: "#who" }] },
 ];
 
